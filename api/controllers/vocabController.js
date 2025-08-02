@@ -1,4 +1,4 @@
-const Vocab = require('../models/VocabModel')
+const Vocab = require('../models/vocabModel')
 
 // Get all vocabularies, sorted by newest first
 const viewAllVocabs = async (req, res) => {

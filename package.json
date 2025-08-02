@@ -4,13 +4,13 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app",
-    "start": "node app"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dat Dylan",
   "license": "ISC",
-  "description": "",
+  "description": "Backend API for vocab builder project",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",

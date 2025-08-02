@@ -13,15 +13,17 @@ app.use(express.urlencoded({ extended: true }))
 const mongoose = require('mongoose')
 const db = "mongodb+srv://datntgbh221026:Nguyendat2004@cluster.yx9dwie.mongodb.net/?retryWrites=true&w=majority&appName=Cluster"
 mongoose.connect(db)
-   .then(console.log('Connect DB succeed !'))        // Log successful connection
+mongoose.connect(db)
+   .then(() => console.log('Connect DB succeed !')) // Log successful connection
    .catch(err => console.log('Connect db failed ! ' + err))  // Log error if failed
+
 
 // Import and apply vocabulary API routes
 const router = require("./api/routes/vocabRoute")
 router(app)
 
 // Start the Express server
-const port = 3000
+const port = process.env.PORT || 3000
 app.listen(port, () => {
-   console.log("Server is running at http://localhost:" + port)
+   console.log("Server is running at port " + port)
 })

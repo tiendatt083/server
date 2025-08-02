@@ -1,5 +1,5 @@
 
-const VocabController = require("../controllers/vocabController")
+const VocabController = require("../controllers/VocabController")
 
 const VocabRoute = (app) => {
    // Route for getting all vocabularies and creating a new one

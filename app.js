@@ -17,7 +17,7 @@ mongoose.connect(db)
    .catch(err => console.log('Connect db failed ! ' + err))  // Log error if failed
 
 // Import and apply vocabulary API routes
-const router = require("./api/routes/vocabRoute")
+const router = require("./api/routes/VocabRoute")
 router(app)
 
 // Start the Express server
